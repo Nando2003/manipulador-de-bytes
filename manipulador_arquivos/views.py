@@ -162,6 +162,8 @@ class HomeView(FormView):
         if os.path.exists(local_path):
             with open(local_path, 'rb') as arquivo:
                 requests.put(webdav_url, auth=(webdav_login, webdav_password), data=arquivo,)
+        
+        os.remove(local_path)
 
     def download_file(self, file_name, local_path):
 

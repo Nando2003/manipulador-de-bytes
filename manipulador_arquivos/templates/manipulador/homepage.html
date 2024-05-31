@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Manipulador de Bytes{% endblock %}
+
+{% block styles %}
+<style>
+    .form-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .form-items ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .form-items li {
+        margin-bottom: 10px;
+    }
+
+    .form-items label {
+        margin-right: 10px;
+    }
+
+    .button-submit {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .button-submit:hover {
+        background-color: #45a049;
+    }
+
+    .title-card {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    input[type="file"] {
+        margin-right: 10px;
+    }
+
+    #file-name {
+        margin-top: 10px;
+        color: grey;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="title-card">
+    <h1>Manipulador de Bytes</h1>
+</div>
+<section class="form">
+    <form method="post">
+        <div class="form-items">
+            {% csrf_token %}
+            <ul>
+                {% for file in files %}
+                    <li>
+                        <label for="{{ file }}">{{ file }}</label>
+                        <input type="radio" id="{{ file }}" name="download" value="{{ file }}">
+                    </li>
+                {% endfor %}
+            </ul>
+            <button type="submit" name="action" value="delete" class="button-submit">Deletar</button>
+            <button type="submit" name="action" value="download" class="button-submit">Download</button>
+        </div>
+    </form>
+</section>
+
+<div class="title-card">
+    <h2>Upload</h2>
+</div>
+<form method="post" enctype="multipart/form-data">
+    <div class="form-items">
+        {% csrf_token %}
+        {{ upload_form.as_p }}
+        <button type="submit" class="button-submit">Upload</button>
+    </div>
+</form>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

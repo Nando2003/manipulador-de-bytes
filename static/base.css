@@ -1,0 +1,136 @@
+body {
+  font-family: 'Roboto', sans-serif;
+
+  background-color: #fafafa;
+  font-weight: 400; /* Default weight */
+  line-height: 1.6; /* Optimal readability */
+  font-style: normal;
+
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #fefefe; /* Adjust background color as needed */
+  border-radius: 15px; /* Adjust border radius as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+  padding: calc(1% + 4.5px); /* Responsive padding */
+  margin: 20px; /* Adjust margin as needed */
+  max-height: max-content;
+}
+
+
+
+.container {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+}
+
+.title-card {
+  text-align: center;
+  border-radius: 2.5px;
+
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.title-card h1 {
+  color: #000000;
+  font-size: calc(25px + 0.390625vw);
+  margin: 0;
+
+  font-weight: 500;
+}
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+
+
+/* .form-items > p {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0px;
+  margin-bottom: calc(0.5vw + 10px);
+}
+
+.form-items > p > input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.form-items > p > input:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-items > p > label {
+  font-weight: 450;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: calc(10px + 0.390625vw);
+}
+
+.form-items > p > label::after {
+  content: attr(data-last-char);
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+.form-items > ul > li {
+  font-size: calc(10px + 0.390625vw);
+}
+
+.form-items > p > span {
+  font-size: calc(10px + 0.390625vw);
+} */
+
+.button-submit {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .button-submit > button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button-submit > button:hover {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button-submit > button:active {
+  transform: translateY(3px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0);
+} */

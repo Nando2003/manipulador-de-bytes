@@ -1,0 +1,73 @@
+body {
+  font-family: 'Roboto', sans-serif;
+
+  font-weight: 400; /* Default weight */
+  line-height: 1.6; /* Optimal readability */
+  font-style: normal;
+
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 1;
+  position: relative;
+}
+
+main {
+  background-color: #EADBC8; /* Light blue-gray background */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  border: black solid 5px;
+}
+
+.title-card {
+  text-align: center;
+  border-radius: 2.5px;
+  border-bottom: #000000 solid 2px;
+
+  background-color: #DAC0A3;
+
+  padding: 0;
+  margin: 0;
+}
+
+.title-card h1 {
+  color: #000000;
+  font-weight: 600;
+  font-size: 10em;
+  margin: 0;
+}
+
+/* Styling the background */
+#img_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('your-image-url.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Lower than your content, but higher than the background */
+  background: #102C57; /* Blue with 50% opacity */
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}

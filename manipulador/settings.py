@@ -128,6 +128,6 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-WEBDAV_URL = 'https://cloud.fuzzylab.tech/'
-WEBDAV_USERNAME = 'FernandoLuiz2003'
-WEBDAV_PASSWORD = 'Nando@003'
+WEBDAV_URL = ''
+WEBDAV_USERNAME = ''
+WEBDAV_PASSWORD = ''

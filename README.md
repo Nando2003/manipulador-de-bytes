@@ -34,7 +34,7 @@ O projeto **Manipulador de Bytes** inclui as seguintes funcionalidades:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/manipulador-de-bytes.git
+   git clone https://github.com/Nando2003/manipulador-de-bytes.git
    cd manipulador-de-bytes
    ```
 

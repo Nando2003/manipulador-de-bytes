@@ -33,7 +33,12 @@ class HomeView(FormView):
         if form.is_valid():
             upload_file = form.cleaned_data['upload_file']
             file_name = upload_file.name
-            file_path = f"manipulador_arquivos/upload-file/{file_name}"
+            
+            folder_path = "manipulador_arquivos/upload-file"
+            file_path = f"{folder_path}/{file_name}"
+            
+            if not os.path.exists(folder_path):
+                os.mkdir(folder_path)
 
             with open(file_path,'wb') as destination:
                 for chunk in upload_file.chunks():

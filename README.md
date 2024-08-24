@@ -60,12 +60,15 @@ O projeto **Manipulador de Bytes** inclui as seguintes funcionalidades:
     ```bash
     python manage.py runserver
     ```
-    
+
 ### Usando a Aplicação
 
 - Acesse `http://localhost:8000` em seu navegador para interagir com a aplicação.
 
 - Você poderá enviar, listar, baixar e excluir arquivos através da interface fornecida.
+
+## Visual
+![alt text](images/image.png)
 
 ## Aprendizados e Aplicações
 

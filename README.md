@@ -19,11 +19,6 @@ O projeto **Manipulador de Bytes** inclui as seguintes funcionalidades:
 - **Listagem de Arquivos**: Exibe uma lista de todos os arquivos presentes em um diretório específico no servidor remoto.
 - **Exclusão de Arquivos**: Permite a remoção de arquivos no servidor remoto.
 
-## Estrutura do Projeto
-
-O projeto está estruturado da seguinte forma:
-
-
 ## Configuração e Uso
 
 ### Pré-requisitos

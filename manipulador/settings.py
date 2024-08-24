@@ -131,6 +131,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 load_dotenv("./dotenv_files/.env")
 
-WEBDAV_URL = 'https://cloud.fuzzylab.tech/'
+WEBDAV_URL = os.environ.get("WEBDAV_URL")
+WEBDAV_DIR = os.environ.get("WEBDAV_DIR")
 WEBDAV_USERNAME = os.environ.get("WEBDAV_USERNAME")
 WEBDAV_PASSWORD = os.environ.get("WEBDAV_PASSWORD")

@@ -62,7 +62,7 @@ class HomeView(FormView):
     
     def listing_file(self):
         options = {
-            'webdav_hostname': settings.WEBDAV_URL + f'remote.php/dav/files/{settings.WEBDAV_USERNAME}/Temp-File-Nando-Example',
+            'webdav_hostname': settings.WEBDAV_URL + f'remote.php/dav/files/{settings.WEBDAV_USERNAME}/{settings.WEBDAV_DIR}',
             'webdav_login': settings.WEBDAV_USERNAME,
             'webdav_password': settings.WEBDAV_PASSWORD
         }
@@ -73,7 +73,7 @@ class HomeView(FormView):
     
     def upload_file(self, file_name, local_path):
 
-        webdav_url = settings.WEBDAV_URL + f'remote.php/dav/files/{settings.WEBDAV_USERNAME}/Temp-File-Nando-Example/{file_name}'
+        webdav_url = settings.WEBDAV_URL + f'remote.php/dav/files/{settings.WEBDAV_USERNAME}/{settings.WEBDAV_DIR}/{file_name}'
         webdav_login = settings.WEBDAV_USERNAME
         webdav_password = settings.WEBDAV_PASSWORD
         
@@ -85,7 +85,7 @@ class HomeView(FormView):
 
     def download_file(self, file_name, local_path):
 
-        webdav_url = settings.WEBDAV_URL + f'remote.php/dav/files/{settings.WEBDAV_USERNAME}/Temp-File-Nando-Example/{file_name}'
+        webdav_url = settings.WEBDAV_URL + f'remote.php/dav/files/{settings.WEBDAV_USERNAME}/{settings.WEBDAV_DIR}/{file_name}'
         webdav_login = settings.WEBDAV_USERNAME
         webdav_password = settings.WEBDAV_PASSWORD
 
@@ -95,7 +95,7 @@ class HomeView(FormView):
             f.write(response_get.content)
 
     def delete_file(self, file_name):
-        webdav_url = settings.WEBDAV_URL + f'remote.php/dav/files/{settings.WEBDAV_USERNAME}/Temp-File-Nando-Example/{file_name}'
+        webdav_url = settings.WEBDAV_URL + f'remote.php/dav/files/{settings.WEBDAV_USERNAME}/{settings.WEBDAV_DIR}/{file_name}'
         webdav_login = settings.WEBDAV_USERNAME
         webdav_password = settings.WEBDAV_PASSWORD
 

@@ -54,6 +54,8 @@ O projeto **Manipulador de Bytes** inclui as seguintes funcionalidades:
     ```
     WEBDAV_USERNAME=seu_usuario
     WEBDAV_PASSWORD=sua_senha
+    WEBDAV_DIR=seu_diretório 
+    WEBDAV_URL=nextcloud_url
     ```
 
 5. Execute o servidor Django:

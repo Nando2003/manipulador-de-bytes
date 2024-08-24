@@ -56,7 +56,6 @@ class HomeView(FormView):
         return FileResponse(open(download_path, 'rb'), as_attachment=True, filename=selected_file)
     
     def listing_file(self):
-
         options = {
             'webdav_hostname': settings.WEBDAV_URL + f'remote.php/dav/files/{settings.WEBDAV_USERNAME}/Temp-File-Nando-Example',
             'webdav_login': settings.WEBDAV_USERNAME,

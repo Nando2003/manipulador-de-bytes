@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+from dotenv import load_dotenv
 from pathlib import Path
 import os
 
@@ -128,10 +129,7 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-from dotenv import load_dotenv
-
-dotenv_path = os.path.join(os.path.dirname(__file__), "dotenv_files/.env") 
-load_dotenv(dotenv_path)
+load_dotenv("./dotenv_files/.env")
 
 WEBDAV_URL = 'https://cloud.fuzzylab.tech/'
 WEBDAV_USERNAME = os.environ.get("WEBDAV_USERNAME")

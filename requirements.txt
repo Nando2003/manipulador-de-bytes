@@ -1,3 +1,5 @@
 Django == 4.2.13
 requests
 webdavclient3
+
+python-dotenv

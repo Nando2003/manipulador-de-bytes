@@ -128,6 +128,11 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-WEBDAV_URL = ''
-WEBDAV_USERNAME = ''
-WEBDAV_PASSWORD = ''
+from dotenv import load_dotenv
+
+dotenv_path = os.path.join(os.path.dirname(__file__), "dotenv_files/.env") 
+load_dotenv(dotenv_path)
+
+WEBDAV_URL = 'https://cloud.fuzzylab.tech/'
+WEBDAV_USERNAME = os.environ.get("WEBDAV_USERNAME")
+WEBDAV_PASSWORD = os.environ.get("WEBDAV_PASSWORD")

@@ -65,10 +65,10 @@
             {% csrf_token %}
             <ul>
                 {% for file in files %}
-                    <li>
-                        <label for="{{ file }}">{{ file }}</label>
-                        <input type="radio" id="{{ file }}" name="download" value="{{ file }}">
-                    </li>
+                        <li>
+                            <label for="{{ file }}">{{ file }}</label>
+                            <input type="radio" id="{{ file }}" name="download" value="{{ file }}">
+                        </li>
                 {% endfor %}
             </ul>
             <button type="submit" name="action" value="delete" class="button-submit">Deletar</button>

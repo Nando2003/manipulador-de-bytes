@@ -70,7 +70,7 @@ O projeto **Manipulador de Bytes** inclui as seguintes funcionalidades:
 - Você poderá enviar, listar, baixar e excluir arquivos através da interface fornecida.
 
 ## Visual
-![alt text](images/image.png)
+![alt text](doc/imgs/image.png)
 
 ## Aprendizados e Aplicações
 
